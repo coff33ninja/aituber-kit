@@ -12,5 +12,10 @@
     "statusBarItem.hoverBackground": "#7c5a88",
     "statusBarItem.remoteBackground": "#604669",
     "statusBarItem.remoteForeground": "#e7e7e7"
-  }
+  },
+  "i18n-ally.localesPaths": [
+    "locales",
+    "src/features/messages",
+    "src/__tests__/features/messages"
+  ]
 }
