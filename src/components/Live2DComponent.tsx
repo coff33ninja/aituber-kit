@@ -112,7 +112,7 @@ const Live2DComponent = (): JSX.Element => {
         app.destroy(true)
       }
     }
-  }, [])
+  }, [app])
 
   useEffect(() => {
     if (app && selectedLive2DPath) {

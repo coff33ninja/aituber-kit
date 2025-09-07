@@ -59,19 +59,20 @@ export const VideoDisplay = forwardRef<HTMLDivElement, VideoDisplayProps>(
 
     // Handle background video sync
     useEffect(() => {
+      const backgroundVideo = backgroundVideoRef.current
       if (useVideoAsBackground && videoRef.current?.srcObject) {
-        if (backgroundVideoRef.current) {
-          backgroundVideoRef.current.srcObject = videoRef.current.srcObject
+        if (backgroundVideo) {
+          backgroundVideo.srcObject = videoRef.current.srcObject
         }
       } else if (!useVideoAsBackground) {
-        if (backgroundVideoRef.current) {
-          backgroundVideoRef.current.srcObject = null
+        if (backgroundVideo) {
+          backgroundVideo.srcObject = null
         }
       }
 
       return () => {
-        if (backgroundVideoRef.current) {
-          backgroundVideoRef.current.srcObject = null
+        if (backgroundVideo) {
+          backgroundVideo.srcObject = null
         }
       }
     }, [useVideoAsBackground, videoRef])
