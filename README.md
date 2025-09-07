@@ -1,6 +1,6 @@
 # AITuberKit
 
-> **Note from coff33n:** This is a fork of the original [AITuberKit by tegnike](https://github.com/tegnike/aituber-kit). I am experimenting with the code to add additional functionality.
+> **Note from coff33nja:** This is a fork of the original [AITuberKit by tegnike](https://github.com/tegnike/aituber-kit). I am experimenting with the code to add additional functionality.
 
 
 <img style="max-width: 100%;" src="./public/ogp.png">
